@@ -21,7 +21,7 @@ titanic <- titanic %>% mutate(embarked = replace(embarked, embarked=="", "S"))
 # While there are many ways to fill these missing values, using the mean or median of the rest of the values is quite common in such cases.
 # Calculate the mean of the Age column and use that value to populate the missing values
 # Think about other ways you could have populated the missing values in the age column. Why would you pick any of those over the mean (or not)?
-
+medianAge <- median(titanic$age)
 
 
 #3 Lifeboat
